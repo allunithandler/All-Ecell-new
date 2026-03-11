@@ -16,27 +16,27 @@ const MENTORS: Mentor[] = [
   {
     name: "Dr. Pramod Joshi",
     role: "External Mentor",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "/images/Pramod-Sir.png"
   },
   {
     name: "Prof. Anoop Kumar Gupta",
     role: "Chief Patron",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "/images/Anoop-Sir.jpeg"
   },
   {
     name: "Deepak Sharma",
     role: "Chief Mentor",
-    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "/images/Deepak_Sir.png"
   },
   {
     name: "Abhishek Pratap Gautam",
     role: "StartUp Mentor",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "/images/Abhishek_Sir.png"
   },
   {
     name: "Jitendra Sharma",
     role: "Activity Mentor",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400&h=400"
+    image: "/images/Jitendra_Sir.png"
   }
 ];
 
@@ -100,13 +100,6 @@ export default function Mentors() {
               >
                 {/* 3D Container */}
                 <div className="relative w-full h-full flex flex-col items-center transform transition-transform duration-400 group-hover:-translate-y-4 group-hover:translate-z-20 group-hover:rotate-x-5 group-hover:-rotate-y-5">
-                  
-                  {/* E-Cell Badge */}
-                  <div className="absolute top-0 left-0 bg-[#FF6B35] text-white text-xs font-bold px-2 py-1 rounded-br-lg rounded-tl-lg">
-                    E-Cell
-                  </div>
-
-                  {/* Photo Frame */}
                   <div className="relative w-[180px] h-[200px] mb-6 rounded-lg overflow-hidden p-[3px] bg-gradient-to-br from-[#FF6B35] to-orange-600">
                     <div className="w-full h-full rounded-lg overflow-hidden bg-black relative">
                       <Image
@@ -118,7 +111,6 @@ export default function Mentors() {
                     </div>
                   </div>
 
-                  {/* Info */}
                   <h3 className="text-xl font-bold text-white text-center mb-2">
                     {mentor.name}
                   </h3>

@@ -9,6 +9,7 @@ const partners = [
   { name: "StartUp LaunchPad", src: "/images/upstart_logo (1).png" },
   { name: "Genie", src: "/images/GenieLogo-01.png" },
   { name: "WLCM", src: "/images/wlcm-logo.png" },
+  { name: "MeitY Startup Hub", src: "/images/WhatsApp Image 2026-03-06 at 12.53.57 AM-Photoroom.png" },
 ];
 
 export default function Partners() {

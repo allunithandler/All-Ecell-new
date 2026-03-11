@@ -58,8 +58,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="hero-section relative h-[100svh] overflow-hidden">
-      <div className="parallax-element absolute inset-0 -z-10">
+    <section ref={containerRef} className="hero-section relative h-[100svh]">
+      <div className="parallax-element absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-black z-10 pointer-events-none" />
         <HeroCanvas />
       </div>
       <div className="relative h-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center">

@@ -22,20 +22,6 @@ export default function ContactForm() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const ctx = gsap.context(() => {
-        // Fade in title
-        gsap.from('.section-title', {
-            scrollTrigger: {
-                trigger: '.section-title',
-                start: 'top 80%',
-                end: 'top 20%',
-                toggleActions: 'play none none reverse',
-            },
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            ease: 'power3.out',
-        });
-
         // Fade in form (left)
         gsap.from('.contact-form', {
             scrollTrigger: {
