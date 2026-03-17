@@ -34,6 +34,8 @@ export default function Partners() {
                   alt={p.name} 
                   fill 
                   className="object-contain" 
+                  unoptimized
+                  loading="lazy"
                 />
               </div>
             </div>

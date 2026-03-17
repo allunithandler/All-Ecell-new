@@ -32,8 +32,6 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'Our Team', href: '/team' },
     { name: 'Gallery', href: '/gallery' },
-    { name: 'Planned Events', href: '/events' },
-    { name: 'Calendar', href: '/calendar' },
     { name: 'About Us', href: '/about' },
     { name: 'Contact Us', href: '/contact' },
   ];
@@ -50,11 +48,12 @@ const Navbar = () => {
           <Link href="/" className="flex items-center space-x-2 z-[110]">
             <div className="relative w-10 h-10">
               <Image
-                src="/images/Gemini_Generated_Image_f3trmmf3trmmf3tr (1).png"
+                src="/images/E-Cell_New_Logo.png"
                 alt="E-Cell Logo"
                 fill
                 className="object-contain"
                 priority
+                unoptimized
               />
             </div>
             <span className="text-white font-bold text-xl hidden sm:block">

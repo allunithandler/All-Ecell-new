@@ -1,10 +1,13 @@
-import React from 'react';
+'use client';
 
-const AnimatedBackground = () => {
+import { memo } from 'react';
+
+const AnimatedBackground = memo(() => {
   return (
-    <div className="animated-bg-container">
-    </div>
+    <div className="animated-bg-container" />
   );
-};
+});
+
+AnimatedBackground.displayName = 'AnimatedBackground';
 
 export default AnimatedBackground;

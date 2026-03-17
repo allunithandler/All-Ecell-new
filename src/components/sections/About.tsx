@@ -57,11 +57,12 @@ export default function About() {
         <div ref={rightRef} className="flex justify-center">
           <div className="relative w-full aspect-square max-w-[400px]">
             <Image
-              src="/images/Gemini_Generated_Image_f3trmmf3trmmf3tr (1).png"
-              alt="E-Cell GLAU 3D Logo"
+              src="/images/E-Cell_New_Logo.png"
+              alt="E-Cell GLAU Logo"
               fill
               className="object-contain drop-shadow-[0_0_20px_rgba(255,107,53,0.3)]"
               priority
+              unoptimized
             />
           </div>
         </div>

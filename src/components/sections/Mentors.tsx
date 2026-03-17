@@ -6,39 +6,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-interface Mentor {
+import teamData from "@/data/team-councils.json";
+const { mentors: MENTORS } = teamData;
+type Mentor = {
   name: string;
   role: string;
   image: string;
-}
-
-const MENTORS: Mentor[] = [
-  {
-    name: "Dr. Pramod Joshi",
-    role: "External Mentor",
-    image: "/images/Pramod-Sir.png"
-  },
-  {
-    name: "Prof. Anoop Kumar Gupta",
-    role: "Chief Patron",
-    image: "/images/Anoop-Sir.jpeg"
-  },
-  {
-    name: "Deepak Sharma",
-    role: "Chief Mentor",
-    image: "/images/Deepak_Sir.png"
-  },
-  {
-    name: "Abhishek Pratap Gautam",
-    role: "StartUp Mentor",
-    image: "/images/Abhishek_Sir.png"
-  },
-  {
-    name: "Jitendra Sharma",
-    role: "Activity Mentor",
-    image: "/images/Jitendra_Sir.png"
-  }
-];
+};
 
 export default function Mentors() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -107,6 +81,8 @@ export default function Mentors() {
                         alt={mentor.name}
                         fill
                         className="object-cover transition-all duration-400 group-hover:scale-110 group-hover:brightness-110"
+                        unoptimized
+                        loading="lazy"
                       />
                     </div>
                   </div>

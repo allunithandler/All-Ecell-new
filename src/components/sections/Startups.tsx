@@ -125,7 +125,7 @@ export default function Startups() {
               <div data-border className="absolute inset-0 rounded-2xl p-[2px] bg-[var(--gradient)] opacity-0 pointer-events-none" />
               {s.img && (
                 <div className="relative h-[140px] w-full rounded-xl overflow-hidden mb-4">
-                  <Image src={s.img} alt={s.name} fill className="object-cover" />
+                  <Image src={s.img} alt={s.name} fill className="object-cover" unoptimized loading="lazy" />
                 </div>
               )}
               <h3 className="text-xl font-bold text-card-foreground">{s.name}</h3>

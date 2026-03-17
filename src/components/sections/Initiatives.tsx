@@ -158,6 +158,8 @@ export default function Initiatives() {
                       alt={item.title}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      unoptimized
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent opacity-80" />
                     <div className="absolute bottom-4 left-4">
